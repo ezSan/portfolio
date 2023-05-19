@@ -1,0 +1,32 @@
+
+@use '../utils/barrelUtils.scss' as *;
+
+.heroStyled{
+    width: 80%;    
+    margin: 3% 10% 3% 10%;   
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;  
+}
+
+.welcomeTitle{
+    font-size: x-large;
+}
+
+.heroTitle{
+    width: 80%;
+    margin:2% 10% 2% 10%;
+    font-size: xx-large;
+    text-align: center;
+    
+}
+
+.spamBlue{
+    color: $color-principal;
+}
+
+.heroDescription{
+    text-align: center;
+    width: 70%;
+    margin: 1% 15% 1% 15%;
+}
