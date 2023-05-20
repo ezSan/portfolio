@@ -1,13 +1,21 @@
+@use '../../utils/barrelUtils.scss' as *;
+
 .styledNavBar{
     width: 50%;
     display: flex;
     justify-content: space-around;
     font-size: larger;
+    a{
+        text-decoration: none;
+        color:$color-principal;
+        font-weight: 500;    
 }
 
+}
 
 .styledHeader{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+

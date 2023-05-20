@@ -2,5 +2,9 @@
 @use './components/barrelComponents.scss' as*;
 
 .appStyled{
-    background-color:rgba(253, 241, 224, 0.749)
+    background-color:rgba(253, 241, 224, 0.749);
+    font-family: $font-montserrat;  
+    display: flex;
+    flex-direction: column;
 }
+
