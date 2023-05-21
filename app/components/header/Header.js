@@ -4,7 +4,7 @@ import NavBar from './navBar/NavBar';
 import styles from '../../scss/globals.module.scss';
 
 
-const {styledHeader} = styles;0
+const {styledHeader} = styles;
 
 export default function Header() {
   return (
