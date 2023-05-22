@@ -1,14 +1,14 @@
 @use '../../utils/barrelUtils.scss' as *;
 
 .styledNavBar{
-    width: 50%;
+    width:80%;
     display: flex;
     justify-content: space-around;
-    font-size: larger;
+    font-size: larger;    
     a{
         text-decoration: none;
         color:$color-principal;
-        font-weight: 500;    
+        font-weight: 500;        
 }
 
 }
@@ -16,10 +16,10 @@
 .styledHeader{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
-    background-color: solid $color-bg;
-    z-index: 10;
+    background-color:$color-header;    
+    z-index: 1;
 }
 
