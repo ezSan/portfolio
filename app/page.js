@@ -9,18 +9,14 @@ import Contact from "./components/contact/Contact";
 
 /* const {appStyled} = styles */
 
-
-
 export default function Home() {
   return (
-    
-      <div>
-        <Header />
-        <Hero />
-        <Skills />
-        <Projects />
-        <Contact/>
-      </div>
-    
+    <>
+      <Header />
+      <Hero  />
+      <Skills  />
+      <Projects  />
+      <Contact  />
+    </>
   );
 }

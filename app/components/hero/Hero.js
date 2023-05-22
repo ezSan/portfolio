@@ -6,7 +6,7 @@ const { heroStyled, heroTitle, heroDescription, animationText } = styles;
 
 export default function Hero() {
   return (
-    <div className={heroStyled}>
+    <div className={heroStyled} id='about'>
       <h2 className={heroTitle}>
         ¡Hola
         <br></br>
@@ -37,7 +37,7 @@ export default function Hero() {
         Después de un largo y dedicado proceso de formación, ahora puedo decir
         que tengo las herramientas necesarias para convertir mi pasión en
         realidad y compartirla con los demás. <br></br> Además de la tecnología,
-        también me interesan la música 🎶, el deporte ⚽️ y la naturaleza⛰️. Son
+        también me interesan la música, el deporte y la naturaleza. Son
         fuentes de inspiración y equilibrio en mi vida. <br></br>En esta página,
         encontrarás mis trabajos más recientes. Te invito a explorarlos y
         descubrir las soluciones que ofrezco como desarrollador full stack.

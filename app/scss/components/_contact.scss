@@ -1,13 +1,103 @@
+@use "../utils/colors" as *;
+
 .styledSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  flex: 1;
 }
 
-.channels{
-    display: flex;
-    justify-content: space-around;    
+.channels {
+  margin-top: 2%;
+  border-top: solid black 2px;
+  border-bottom:  solid black 3px;
+  width: 50%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
 }
 
+.iconContact {
+  margin: 2%;
+  height:15%;
+  width:15%;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.messageBox {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactBox {
+  width: 50%;
+}
+
+.textArea {
+  width: 80%;
+  height: 30%;
+  border: 0;
+  min-height: 150px;
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 1%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    width: 80%;
+    margin: 1%;
+    padding: 1%;
+    border: 0;
+
+    background-color: antiquewhite;
+    :focus {
+      border: 0;
+    }
+  }
+}
+
+.contactTitle {
+  color: $color-principal;
+  font-size: xx-large;
+  margin-top: 0;
+  margin-bottom: 0.5%;
+  width: 700;
+}
+
+.contactPar {
+  width: 50%;
+  font-size: large;
+  width: 400;
+}
+
+.submitButton {
+  border-radius: 20%;
+  padding: 1%;
+  margin: 1%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 4px antiquewhite;
+  background-color: $color-button;
+  color: $color-principal;
+  font-size: larger;
+  font-weight: 700;
+}

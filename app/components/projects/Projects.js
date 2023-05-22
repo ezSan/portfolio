@@ -12,7 +12,7 @@ const {projects, styledProjectsContainer, title, sliderContainer } = styles;
 
 export default function Projects() {
   return (
-    <div className={projects}>
+    <div className={projects} id='projects'>
       <h3 className={title}>PROYECTOS</h3>
       <div className={styledProjectsContainer}>
         <Gifos />

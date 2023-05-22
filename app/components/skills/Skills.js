@@ -33,7 +33,7 @@ const {
 
 export default function Skills() {
   return (
-    <div>
+    <div id='tech'>
       <h3 className={title}>TECNOLOGÏAS</h3>
 
       <div className={skills}>
