@@ -1,26 +1,27 @@
 import React from "react";
 import styles from "../../../scss/globals.module.scss";
-import Nav from "react-bootstrap/Nav";
 
-const { styledNavBar } = styles;
+const { styledNavBar, listItems, navBarOpen } = styles;
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const { isOpen } = props;
+
   return (
-    <Nav className={styledNavBar}>
-      <Nav.Item>
-        <Nav.Link href="#about">SOBRE MI</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href="#tech">TECNOLOGÍAS</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href="#projects">PROYECTOS</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#contact">CONTACTO</Nav.Link>
-        </Nav.Item>
-      </Nav.Item>
-    </Nav>
+    <nav className={isOpen ? navBarOpen : styledNavBar}>
+      <ul className={listItems}>
+        <a href="#about">
+          <li>SOBRE MI</li>
+        </a>
+        <a href="#tech">
+          <li>TECNOLOGÍAS</li>
+        </a>
+        <a href="#projects">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="#contact">
+          <li>CONTACTO</li>
+        </a>
+      </ul>
+    </nav>
   );
 }

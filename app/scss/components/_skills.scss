@@ -1,26 +1,22 @@
-@use '../utils/barrelUtils.scss' as *;
+@use "../utils/barrelUtils.scss" as *;
 
-
-.styledIcon{
-    width: 80px;
-    height: 80px;
-    padding: 1.5%;
+.styledIcon {
+  width: 80px;
+  height: 80px;
+  padding: 1.5%;
 }
 
-
-.skills{
-    flex: 1;
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 80%;
-    margin-left: 10%;
+.skills {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
 }
 
-.title{
-    color:$color-principal;
-    text-align: center;
-    font-size: xx-large;
+.title {
+  color: $color-principal;
+  text-align: center;
+  font-size: xx-large;
 }
-
-
