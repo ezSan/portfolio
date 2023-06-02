@@ -18,12 +18,19 @@
   width: 90%;
   margin-left: 5%;
   justify-content: center;
+  @include movile {
+    width: 98%;
+  }
 }
 .styledCard {
   position: relative;
   margin: 2%;
   transition: all 0.5s ease-in;
   width: 40%;
+
+  @include movile {
+    width: 98%;
+  }
 }
 
 .card__image {

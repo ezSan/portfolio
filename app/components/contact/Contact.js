@@ -19,6 +19,7 @@ const {
 export default function Contact() {
   return (
     <div className={styledSection}>
+    
       <div className={contactContainer}>
         <div className={messageBox}>
           <h3 id="contact" className={contactTitle}>CONTACTO</h3>

@@ -1,14 +1,19 @@
-@use './utils/barrelUtils.scss' as *;
-@use './components/barrelComponents.scss' as*;
+@use "./utils/barrelUtils.scss" as *;
+@use "./components/barrelComponents.scss" as *;
 
-.appStyled{
-    background-color:rgba(253, 241, 224, 0.749);
-    font-family: $font-montserrat;  
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    a{
-        text-decoration: none;
-    }
+.appStyled {
+  background-color: rgba(160, 210, 127, 0.914);
+  font-family: $font-montserrat;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  a {
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size: larger;
+  }
+
+ 
+  
 }
-
