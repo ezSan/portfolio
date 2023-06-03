@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../scss/globals.module.scss";
-
-import Gifos from "./Gifos";
-import Landing from "./Landing";
-import RandomQuoteMachine from "./RandomQuoteMachine";
-import DataWarehouse from "./DataWarehouse";
-import MatchAndCook from "./MatchAndCook";
-import Markdown from "./Markdown";
+import ProjectCard from "./ProjectCard";
 
 import proyectos from "../../../app/proyects.json";
 
@@ -23,7 +17,7 @@ export default function Projects() {
       <div className={styledProjectsContainer}>
         {arrPro.map((py) => {
           return (
-            <Gifos
+            <ProjectCard
               key={py.nombre}
               image={py.image}
               nombre={py.nombre}

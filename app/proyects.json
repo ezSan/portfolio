@@ -3,7 +3,7 @@
     {
       "nombre": "Gifos",
       "image": "/projects/gifos.png",
-      "desc": "Aplicación interactiva, responsive, con modo nocturno,  para compartir, guardar, descargar y crear tus propios Gif. Utilizando la API de Giphy y herramientas nativas del ordenador ",
+      "desc": "Aplicación interactiva, responsive, con modo nocturno,  para compartir, guardar, descargar y crear tus propios Gif. Utilizando la API de Giphy y herramientas nativas del ordenador. ",
       "tecnologias": ["HTML", "CSS", "JavaScrip", "Api", "Sass"],
       "github": "https://github.com/ezSan/GiphoS",
       "deploy": "https://gifosbyezsan.netlify.app/"
@@ -19,7 +19,7 @@
     {
       "nombre": "Match & Cook",
       "image": "/projects/match.png",
-      "desc": "Descubre recetas, de la misma manera que un match en tu app de citas preferidas",
+      "desc": "Descubre recetas, de la misma manera que un match en tu app de citas preferidas, para la izquierda las rechazadas y haciala derecha las matcheadas!",
       "tecnologias": ["ReactJs", "Redux", "Formik", "Boostrap", "Axios", "React Router"],
       "github": "https://github.com/ezSan/Match-Cook",
       "deploy": "https://matchandcook.netlify.app"
@@ -27,7 +27,7 @@
     {
       "nombre": "Markdown Previewer",
       "image": "/projects/Markdown.png",
-      "desc": "Con ésta aplicación podrás escribir y formatear tu texto en Markdown de manera sencilla y ver los resultados de inmediato.",
+      "desc": "Con ésta aplicación podrás escribir y formatear tu texto en Markdown de manera sencilla y ver los resultados de inmediato. Puedes escribir tu código en Javascript y resaltarlo para diferenciarlo.  ",
       "tecnologias": ["HTML", "CSS", "ReactJs"],      
       "deploy": "https://codepen.io/ezsan/pen/abajOwK"
     },
@@ -50,7 +50,7 @@
     {
       "nombre": "Random Quote Machine",
       "image": "/projects/rQuoteMachine.png",
-      "desc": "Un widget de frases inspiradoras y colores aleatorios.",
+      "desc": "Un widget de frases inspiradoras de grandes pensadores, con colores aleatorios. Ideal para motivarse de cara a un nuevo proyecto",
       "tecnologias": ["Javascript","HTML5", "CSS",  "API"],      
       "deploy": "https://codepen.io/ezsan/pen/qBojPZO"
       
