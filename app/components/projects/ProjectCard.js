@@ -17,6 +17,17 @@ const {
 export default function ProjectCard(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
+  const customStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+    },
+  };
+
   function openModal(e) {
     e.stopPropagation();
     setModalIsOpen(true);
@@ -43,7 +54,7 @@ export default function ProjectCard(props) {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Project Details"
-        className={modalContent}
+        style={customStyles}
         // overlayClassName={style.modalOverlay}
       >
         <div onClick={(e) => e.stopPropagation()}>
