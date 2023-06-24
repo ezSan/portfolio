@@ -1,18 +1,17 @@
-@use '../../utils/barrelUtils.scss' as *;
+@use "../../utils/barrelUtils.scss" as *;
 
-.logoTitle{
-    font-size: 2.1em;
-    color: rgb(255, 255, 255);
-    font-weight: 700;    
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 1%;
-    text-shadow: 1px 1px 2px rgb(128, 125, 125), 0 0 30px rgb(26, 109, 6), 0 0 8px rgb(3, 59, 3);
-    
+.logoTitle {
+  padding: 1%;
+  font-size: 2.1em;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1%;
+  text-shadow: 1px 1px 2px rgb(128, 125, 125), 0 0 30px rgb(26, 109, 6),
+    0 0 8px rgb(3, 59, 3);
 
-    @include movile {
-      width: 50%;
-    }
+  @include movile {
+    width: 50%;
+  }
 }
-
-

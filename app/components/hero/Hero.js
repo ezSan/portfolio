@@ -6,32 +6,17 @@ const { heroStyled, heroTitle, heroDescription, animationText } = styles;
 
 export default function Hero() {
   return (
-    <div className={heroStyled} id='about'>
+    <div className={heroStyled} id="about">
+      <p>Hola, soy</p>
+      <h3>Ezequiel Sanchez.</h3>
       <h2 className={heroTitle}>
-        ¡Hola
-        <br></br>
-        soy Ezequiel Sanchez,
-        <TypeAnimation
-          sequence={[
-            "",
-            1000,
-            " Full",
-            1000,
-            " Full Stack",
-            1000,
-            " Full Stack Developer",
-            1000,
-          ]}
-          className={animationText}
-          speed={45}
-          deletionSpeed={60}
-          style={{}}
-          repeat={Infinity}
-        />
-        !
+        Full Stack Developer
       </h2>
+      <p>Desarrollador de aplicaciones y páginas web, móviles y de escritorio.</p>
 
-      <p className={heroDescription}>
+
+      <button>CONOCÉ MAS</button>
+      {/*       <p className={heroDescription}>
         Desde muy jóven, he sido un apasionado de la tecnología. Pasaba horas
         explorando la web, fascinado por el mundo de posibilidades que ofrecía.
         Después de un largo y dedicado proceso de formación, ahora puedo decir
@@ -41,7 +26,9 @@ export default function Hero() {
         fuentes de inspiración y equilibrio en mi vida. <br></br>En esta página,
         encontrarás mis trabajos más recientes. Te invito a explorarlos y
         descubrir las soluciones que ofrezco como desarrollador full stack.
-      </p>
+      </p> */}
+
+
     </div>
   );
 }
