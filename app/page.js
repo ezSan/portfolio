@@ -8,6 +8,7 @@ import styles from "./scss/globals.module.scss";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Modal from 'react-modal';
+import About from "./components/about/About";
 
 /* const {appStyled} = styles */
 
@@ -16,6 +17,7 @@ export default function Home() {
     <div id='__next'>
       <Header />
       <Hero />
+      <About/>
       <Skills />
       <Projects />
       <Contact />

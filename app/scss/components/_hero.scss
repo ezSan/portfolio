@@ -1,40 +1,80 @@
+@use "../utils/barrelUtils.scss" as *;
 
-@use '../utils/barrelUtils.scss' as *;
-
-.heroStyled{
-    width: 80%;    
-    margin: 3% 10% 3% 10%;   
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;  
-    flex: 1;
+.heroStyled {
+  width: 100%;
 }
 
-.welcomeTitle{
-    font-size: x-large;
+.hero_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 3% 10% 3% 10%;
+  height: 100vh;
+
+  color: $color-text;
+  gap: 20;
+  font-size: xx-large;
 }
 
-.heroTitle{
-    width: 80%;
-    margin:2% 10% 2% 10%;
-    font-size: xx-large;
-    text-align: center;
-    
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+
+  p {
+    margin-bottom: 2%;
+    font-size: 60%;
+    margin-top: 1%;
+  }
+
+  h2 {
+    margin: 0;
+    color: $details-color;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  button {
+    width: 30%;
+    background-color: transparent;
+    color: $details-color;
+    padding: 1.5%;
+    border-color: $details-color;
+    font-size: medium;
+  }
 }
 
-.heroDescription{
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    margin: 1% 15% 1% 15%;
-    font-size: larger;
-    font-family: $font-montserrat;
-    
+.hero_image {
+  width: 380px;
+  height: 380px;
 }
 
-.animationText{
-    color:$color-principal
+.heroTitle {
+  margin: 10% 10%;
+  color: $color-text;
+  width: 100%;
+}
+
+.heroDescription {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 1% 15% 1% 15%;
+  font-size: larger;
+  font-family: $font-montserrat;
+}
+
+.animationText {
+  color: $color-bg;
+}
+
+.animationText {
+  color: $details-color;
 }

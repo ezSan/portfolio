@@ -1,7 +1,7 @@
 @use "../utils/barrelUtils.scss" as *;
 
 .title{
-  color:$color-principal;
+  color:$color-bg;
   font-size: xx-large;
 }
 
@@ -36,8 +36,7 @@
 
 .card__image {
   width: 100%;
-  height: 200px;
-  
+  height: 200px; 
   
 }
 
@@ -45,27 +44,6 @@
   box-shadow: 5px 5px 10px #949794, -8px -8px 10px #afb1af;
 }
 
-.card__overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /* height: 50%; */
-  width: 100%;
-  height: fit-content;
-  opacity: 0;
-  visibility: none;
-  transition: 1.1s ease;
-  background-color: #949794;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: x-large;
-}
 
 .styledCard:hover .card__overlay {
   opacity: 0.9;
@@ -102,7 +80,7 @@
 }
 
 .cardTag {
-  background-color: $color-principal;
+  background-color: $color-bg;
   font-size: small;
   color: #ffffff;
   font-weight: 500;
@@ -118,7 +96,7 @@
 
 .deployButton {
   width: fit-content;
-  background-color: $color-principal;
+  background-color: $color-bg;
   color: #ffffff;
   font-weight: 500;
   width: 100%;
@@ -162,3 +140,10 @@
 /* .githubIcon:hover {
     transform: rotate(35deg);
   } */
+
+
+  .modal__button{
+    background-color: #afb1af;
+    border-radius: 20px;
+    color: #ffffff;    
+  }

@@ -4,6 +4,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 98%;
+  margin: 0% 1% 1% 2%;
+  position: fixed;
+  top: 0;
+  background-color: $color-header;
+  align-items: center;
 }
 
 .styledNavBar {

@@ -1,17 +1,25 @@
 @use "./utils/barrelUtils.scss" as *;
 @use "./components/barrelComponents.scss" as *;
 
+
+
 .appStyled {
-  background-color: rgba(135, 186, 101, 0.931);
+  background-color: $color-bg;
   font-family: $font-montserrat;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 0;
+  color:$color-text;
   a {
     text-decoration: none;
     color:white;
     font-weight: 500;
     font-size: larger;
+  }
+
+  h3{
+    color:$color-text
   }
 
  

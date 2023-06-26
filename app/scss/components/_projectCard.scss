@@ -31,12 +31,13 @@
   color: #666;
 }
 
-.modalContent {
-  width: 80%;
-  margin-left: 10%;
-  position: absolute;
-  background-color: #f8f8f8;
-  padding: 20px;
+
+
+.modalTitle {
+  width: 50%;
+  text-align: center;
 }
-
-
+.modalDesc {
+  width: 50%;
+  text-align: center;
+}

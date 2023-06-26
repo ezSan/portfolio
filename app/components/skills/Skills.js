@@ -1,61 +1,102 @@
 import React from "react";
-import styles from "../../scss/globals.module.scss"
+import styles from "../../scss/globals.module.scss";
 import Image from "next/image";
 
-/* icons */
+const { styledIcon, skills, title, iconBox, iconTitle } = styles;
 
-import Bootstrap from "../../../public/icons/frontEndIcons/bootstrap.svg";
-import Css from "../../../public/icons/frontEndIcons/css3.svg";
-import Html from "../../../public/icons/frontEndIcons/html5.svg";
-import Javascript from "../../../public/icons/frontEndIcons/javascript.svg";
-import Mui from "../../../public/icons/frontEndIcons/mui.svg";
-import ReactIcon from "../../../public/icons/frontEndIcons/React.png";
-import Sass from "../../../public/icons/frontEndIcons/sass.svg";
-import Redux from "../../../public/icons/frontEndIcons/redux.svg";
-/* back end icons */
-import Express from "../../../public/icons/backEndIcons/expressjs.svg";
-import Mongo from "../../../public/icons/backEndIcons/mongo.svg";
-import NodeJs from "../../../public/icons/backEndIcons/nodejs.png";
-import Sql from "../../../public/icons/backEndIcons/sql.svg";
-import PhpIcon from "../../../public/icons/backEndIcons/phpIcon.png";
-import Sequelize from "../../../public/icons/backEndIcons/sequelize.png";
+const icons = [
+  // Front-end Icons
+  {
+    name: "React",
+    src: require("../../../public/icons/frontEndIcons/React.png"),
+  },
+  {
+    name: "Bootstrap",
+    src: require("../../../public/icons/frontEndIcons/bootstrap.svg"),
+  },
+  {
+    name: "NextJS",
+    src: require("../../../public/icons/frontEndIcons/next.svg"),
+  },
+  {
+    name: "CSS",
+    src: require("../../../public/icons/frontEndIcons/css3.svg"),
+  },
+  {
+    name: "HTML",
+    src: require("../../../public/icons/frontEndIcons/html5.svg"),
+  },
+  {
+    name: "JavaScript",
+    src: require("../../../public/icons/frontEndIcons/javascript.svg"),
+  },
+  {
+    name: "Material-UI",
+    src: require("../../../public/icons/frontEndIcons/mui.svg"),
+  },
 
-/* develop Icons */
-import GitIcon from "../../../public/icons/desarrolloIcons/git.svg"
-import Slack from "../../../public/icons/desarrolloIcons/slack.png";
-import Agile from "../../../public/icons/desarrolloIcons/agile.png";
+  {
+    name: "Sass",
+    src: require("../../../public/icons/frontEndIcons/sass.svg"),
+  },
+  {
+    name: "Redux",
+    src: require("../../../public/icons/frontEndIcons/redux.svg"),
+  },
 
-const {
-  styledIcon, 
-  skills, 
-  title
-} = styles;
+  // Back-end Icons
+  {
+    name: "Express.js",
+    src: require("../../../public/icons/backEndIcons/expressjs.svg"),
+  },
+  {
+    name: "MongoDB",
+    src: require("../../../public/icons/backEndIcons/mongo.svg"),
+  },
+  {
+    name: "Node.js",
+    src: require("../../../public/icons/backEndIcons/nodejs.png"),
+  },
+  {
+    name: "SQL",
+    src: require("../../../public/icons/backEndIcons/sql.svg"),
+  },
+  {
+    name: "PHP",
+    src: require("../../../public/icons/backEndIcons/phpIcon.png"),
+  },
+  {
+    name: "Sequelize",
+    src: require("../../../public/icons/backEndIcons/sequelize.png"),
+  },
+
+  // Development Icons
+  {
+    name: "Git",
+    src: require("../../../public/icons/desarrolloIcons/git.svg"),
+  },
+  {
+    name: "Slack",
+    src: require("../../../public/icons/desarrolloIcons/slack.png"),
+  },
+  {
+    name: "Agile",
+    src: require("../../../public/icons/desarrolloIcons/agile.png"),
+  },
+];
 
 export default function Skills() {
   return (
-    <div id='tech'>
-      <h3 className={title}>TECNOLOGÏAS</h3>
+    <div id="tech">
+      <h3 className={title}>TECNOLOGÍAS</h3>
 
       <div className={skills}>
-        <Image src={Bootstrap} alt="icon" className={styledIcon}  />
-        <Image src={Css} alt="icon" className={styledIcon} />
-        <Image src={Html} alt="icon" className={styledIcon} />
-        <Image src={Javascript} alt="icon" className={styledIcon} />
-        <Image src={Mui} alt="icon" className={styledIcon} />
-        <Image src={ReactIcon} alt="icon" className={styledIcon} />
-        <Image src={Sass} alt="icon" className={styledIcon} />
-        <Image src={Redux} alt="icon" className={styledIcon} />
-        <Image src={Express} alt="icon" className={styledIcon} />
-        
-        <Image src={Mongo} alt="icon" className={styledIcon} />
-        <Image src={NodeJs} alt="icon" className={styledIcon} />
-        <Image src={Sql} alt="icon" className={styledIcon} />
-        <Image src={PhpIcon} alt="icon" className={styledIcon} />
-        <Image src={Sequelize} alt="icon" className={styledIcon} />
-
-        <Image src={Slack} alt="icon" className={styledIcon} />
-        <Image src={GitIcon} alt="icon" className={styledIcon} />
-        <Image src={Agile} alt="icon" className={styledIcon} />       
+        {icons.map((icon, index) => (
+          <div key={index} className={iconBox}>
+            <Image src={icon.src} alt={icon.name} className={styledIcon} />
+            <p className={iconTitle}>{icon.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
