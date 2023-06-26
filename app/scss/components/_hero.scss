@@ -1,69 +1,80 @@
+@use "../utils/barrelUtils.scss" as *;
 
-@use '../utils/barrelUtils.scss' as *;
-
-.heroStyled{
-    width: 100%;    
-    margin: 3% 10% 3% 10%;   
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;      
-    height: 100vh;
-    color: $color-text;
-    gap:0;
-    font-size: xx-large;
-    
-    p{
-        margin-bottom: 2%;
-        font-size: 50%;
-    }
-
-    h2{
-        margin:0;
-        color: $details-color;
-    }
-
-    h3{
-        margin: 0
-    }
-
-
-    button{
-        width: 20%;
-        background-color: transparent;
-        color:$details-color;
-        padding: 1%;
-        border-color: $details-color;
-        font-size: large;
-    }
+.heroStyled {
+  width: 100%;
 }
 
+.hero_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 3% 10% 3% 10%;
+  height: 100vh;
 
-
-
-
-.heroTitle{    
-    margin: 10%  10%;    
-    color:$color-text
-    
+  color: $color-text;
+  gap: 20;
+  font-size: xx-large;
 }
 
-.heroDescription{
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    margin: 1% 15% 1% 15%;
-    font-size: larger;
-    font-family: $font-montserrat;
-    
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+
+  p {
+    margin-bottom: 2%;
+    font-size: 60%;
+    margin-top: 1%;
+  }
+
+  h2 {
+    margin: 0;
+    color: $details-color;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  button {
+    width: 30%;
+    background-color: transparent;
+    color: $details-color;
+    padding: 1.5%;
+    border-color: $details-color;
+    font-size: medium;
+  }
 }
 
-.animationText{
-    color:$color-principal
+.hero_image {
+  width: 380px;
+  height: 380px;
 }
 
-.animationText{
- color:$details-color
+.heroTitle {
+  margin: 10% 10%;
+  color: $color-text;
+  width: 100%;
+}
+
+.heroDescription {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 1% 15% 1% 15%;
+  font-size: larger;
+  font-family: $font-montserrat;
+}
+
+.animationText {
+  color: $color-bg;
+}
+
+.animationText {
+  color: $details-color;
 }

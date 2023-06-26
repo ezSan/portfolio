@@ -1,8 +1,10 @@
 @use "./utils/barrelUtils.scss" as *;
 @use "./components/barrelComponents.scss" as *;
 
+
+
 .appStyled {
-  background-color: $color-principal;
+  background-color: $color-bg;
   font-family: $font-montserrat;
   display: flex;
   flex-direction: column;
@@ -14,6 +16,10 @@
     color:white;
     font-weight: 500;
     font-size: larger;
+  }
+
+  h3{
+    color:$color-text
   }
 
  

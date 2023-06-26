@@ -1,7 +1,7 @@
 @use "../utils/barrelUtils.scss" as *;
 
 .title{
-  color:$color-principal;
+  color:$color-bg;
   font-size: xx-large;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .cardTag {
-  background-color: $color-principal;
+  background-color: $color-bg;
   font-size: small;
   color: #ffffff;
   font-weight: 500;
@@ -96,7 +96,7 @@
 
 .deployButton {
   width: fit-content;
-  background-color: $color-principal;
+  background-color: $color-bg;
   color: #ffffff;
   font-weight: 500;
   width: 100%;
