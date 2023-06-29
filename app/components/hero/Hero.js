@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../../scss/globals.module.scss";
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 import Astronaut from "../../../public/astronaut.png";
 

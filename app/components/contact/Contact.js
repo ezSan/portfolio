@@ -18,7 +18,7 @@ const {
 
 export default function Contact() {
   return (
-    <div className={styledSection}>
+    <section className={styledSection}>
     
       <div className={contactContainer}>
         <div className={messageBox}>
@@ -66,7 +66,7 @@ export default function Contact() {
           onClick={() => window.open("https://github.com/ezSan", "_blank")}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

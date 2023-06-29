@@ -87,7 +87,7 @@ const icons = [
 
 export default function Skills() {
   return (
-    <div id="tech">
+    <section id="tech">
       <h3 className={title}>TECNOLOGÍAS</h3>
 
       <div className={skills}>
@@ -98,6 +98,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
