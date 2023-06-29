@@ -12,7 +12,7 @@ export default function Projects() {
   const [arrPro, setProyectos] = useState(arrProy); 
 
   return (
-    <div className={projects} id="projects">
+    <section className={projects} id="projects">
       <h3 className={title}>PROYECTOS</h3>
       <div className={styledProjectsContainer}>
         {arrPro.map((py) => {
@@ -29,6 +29,6 @@ export default function Projects() {
           );
         })}        
       </div>
-    </div>
+    </section>
   );
 }
