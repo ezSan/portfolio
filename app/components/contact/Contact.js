@@ -6,67 +6,57 @@ const {
   styledSection,
   channels,
   contactContainer,
-  messageBox,
+  principalContact,
   contactForm,
-  textArea,
-  contactBox,
   contactPar,
   contactTitle,
   iconContact,
-  submitButton
+  submitButton,
 } = styles;
 
 export default function Contact() {
   return (
-    <section className={styledSection}>
-    
+    <div id="contact" className={styledSection}>
+      
+      <h3>CONTACTO</h3>
       <div className={contactContainer}>
-        <div className={messageBox}>
-          <h3 id="contact" className={contactTitle}>CONTACTO</h3>
+        <div className={principalContact}>
           <p className={contactPar}>
             ¡Gracias por visitar por mi página! Si estás buscando un
-            desarrollador Full Stack, ¡estoy acá para ayudarte! Dejame tus datos
-            y motivo, ¡y juntos vamos a hacer grandes proyectos!
+            desarrollador Full Stack developer, ¡estoy acá para ayudarte! Dejame
+            tus datos y motivo, ¡y juntos vamos a hacer grandes proyectos!
           </p>
-        </div>
-
-        <div className={contactBox}>
-          <form className={contactForm}>
-            <input type="text" placeholder=" Nombre" />
-            <input type="email" placeholder=" Email" />
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder=" Escribe tu mensaje.."
-              className={textArea}
+          <div className={channels}>
+            <LinkedIn
+              width={150}
+              className={iconContact}
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/ezsan/", "_blank")
+              }
             />
-            <button type="submit" value="Enviar" className={submitButton}>
-              Enviar 📧
-            </button>
-          </form>
+            <GitHub
+              width={150}
+              className={iconContact}
+              onClick={() => window.open("https://github.com/ezSan", "_blank")}
+            />
+          </div>
         </div>
-      </div>
 
-      <div className={channels}>
-        <LinkedIn
-          width={64}
-          className={iconContact}
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/ezsan/", "_blank")
-          }
-        />
-        <Mail
-          width={64}
-          className={iconContact}
-          onClick={() => (window.location.href = "mailto:ezsandev@gmail.com")}
-        />
-        <GitHub
-          width={64}
-          className={iconContact}
-          onClick={() => window.open("https://github.com/ezSan", "_blank")}
-        />
+        <form className={contactForm}>
+          <input type="text" placeholder=" Nombre" />
+          <input type="email" placeholder=" Email" />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder=" Escribe tu mensaje.."
+          />
+
+          <button type="submit" value="Enviar" className={submitButton}>
+            Enviar
+          </button>
+        </form>
       </div>
-    </section>
+    </div>
   );
 }
 
