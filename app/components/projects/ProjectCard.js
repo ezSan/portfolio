@@ -30,7 +30,7 @@ export default function ProjectCard(props) {
       <h2 className={title}>{props.nombre}</h2>
       <div className={technologies}>
         {tecn.map((tecno, index) =>
-          tecno.map((p) => <p className={span}>{p}</p>)
+          tecno.map((p) => <p key={tecno} className={span}>{p}</p>)
         )}
       </div>
       <p className={description}>{props.desc}</p>
