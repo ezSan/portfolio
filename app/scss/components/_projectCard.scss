@@ -1,43 +1,83 @@
-.project_card {
-  background-color: #bbb2b2;
-  border: 1px solid #ddd;
-  border-radius: 20px;
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+
+.projectCard {
+  background-color: lighten($color-bg, 30%);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: box-shadow 0.3s ease;
+  width: 250px;
+  margin-bottom: 16px;
+  height: 500px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
-  margin: 1%;
-  cursor: pointer;
-}
+  justify-content: center;
 
-.project_card__image {
-  object-fit: cover;
-  border-radius: 4px;
-  margin-right: 20px;
-}
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-.project_card__content {
-  flex-grow: 1;
-}
+  .image {
+    width: 100%;
+    height: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
 
-.project_card__title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: $color-header;
+    margin-bottom: 8px;
+  }
 
-.project_card__description {
-  font-size: 16px;
-  color: #666;
-}
+  .technologies {
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 5%;
+  }
 
+  .span {
+    background-color: $color-button;
+    color: $color-bg;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin: 1%;
+  }
 
+  .description {
+    font-size: 14px;
+    color: $color-text;
+    margin-bottom: 10px;
+  }
 
-.modalTitle {
-  width: 50%;
-  text-align: center;
-}
-.modalDesc {
-  width: 50%;
-  text-align: center;
+  .buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8px;
+
+    .button {
+      background-color: $color-button;
+      color: $color-bg;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 4px;
+      margin-right: 10px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: darken($color-button, 10%);
+      }
+    }
+  }
 }

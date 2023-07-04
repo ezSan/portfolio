@@ -15,9 +15,11 @@
 .styledProjectsContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
+  justify-content: space-around;
   
-  justify-content: center;
+  
+  
   @include movile {
     width: 98%;
     margin: 1% 1% 1% 1%;

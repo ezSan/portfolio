@@ -7,6 +7,7 @@ import proyectos from "../../../app/proyects.json";
 const { projects, styledProjectsContainer, title, sliderContainer } = styles;
 
 const arrProy = proyectos.proyects;
+console.log(arrProy)
 
 export default function Projects() {
   const [arrPro, setProyectos] = useState(arrProy); 
@@ -24,7 +25,7 @@ export default function Projects() {
               desc={py.desc}
               github={py.github}
               deploy={py.deploy}
-              techn={[py.tecnologias]}
+              tecnologias={[py.tecnologias]}
             />
           );
         })}        
