@@ -2,10 +2,11 @@
 
 .styledHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
+  gap:20%;
   flex-wrap: wrap;
-  width: 98%;
-  margin: 0% 1% 1% 2%;
+  width: 100%;
+  margin: 0% 1% 1% 0%;
   position: fixed;
   top: 0;
   background-color: $color-header;
@@ -70,7 +71,9 @@
     display: inline;
     padding: 2%;
     color: white;
+    
     transform: scale(1.5);
+    
    
   }
 }
