@@ -2,6 +2,9 @@
 
 .heroStyled {
   width: 100%;
+  @include movile {
+    margin-top: 15%;
+  }
 }
 
 .hero_content {
@@ -11,10 +14,16 @@
   width: 80%;
   margin: 3% 10% 3% 10%;
   height: 100vh;
-
   color: $color-text;
   gap: 20;
   font-size: xx-large;
+
+  @include movile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .hero_text {
@@ -46,11 +55,19 @@
     border-color: $details-color;
     font-size: medium;
   }
+
+  @include movile{
+    margin-top: 15%;
+  }
 }
 
 .hero_image {
   width: 380px;
   height: 380px;
+  @include movile {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 .heroTitle {
