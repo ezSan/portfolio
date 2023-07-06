@@ -9,10 +9,16 @@
 .skills {
   flex: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 60%;
   margin: 20px auto;
+  @include movile {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
 }
 
 .title {
