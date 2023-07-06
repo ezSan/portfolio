@@ -22,8 +22,7 @@ export default function Contact() {
       <div className={contactContainer}>
         <div className={principalContact}>
           <p className={contactPar}>
-            ¡Gracias por visitar por mi página! Si estás buscando un
-            desarrollador Full Stack developer, ¡estoy acá para ayudarte! Dejame
+            ¡Gracias por visitar por mi página! Si estás buscando un desarrollador Full Stack , ¡estoy acá para ayudarte! Dejame
             tus datos y motivo, ¡y juntos vamos a hacer grandes proyectos!
           </p>
           <div className={channels}>

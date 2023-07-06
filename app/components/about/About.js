@@ -3,12 +3,12 @@ import styles from "../../scss/globals.module.scss";
 import Image from "next/image";
 import Contact from "../../../public/hey.png";
 
-const { about, aboutCtn } = styles;
+const { about, aboutCtn, aboutImg } = styles;
 
 export default function About() {
   return (
     <section id="about" className={about}>
-      <h3>Sobre mi</h3>
+      <h3>SOBRE MI</h3>
       <div className={aboutCtn}>
         <p>
           Desde muy jóven, he sido un apasionado de la tecnología. Pasaba horas
@@ -22,7 +22,7 @@ export default function About() {
           explorarlos y descubrir las soluciones que ofrezco como desarrollador
           full stack.
         </p>
-        <Image src={Contact} width={300} height={300} alt="conctact" />
+        <Image src={Contact}  alt="conctact" className={aboutImg} />
       </div>
     </section>
   );
