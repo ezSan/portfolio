@@ -45,7 +45,7 @@ export default function NavBar(props) {
           whileTap={{ scale: 0.9 }}
           transition={smoothScrollAnimation}
         >
-          Projectos
+          Proyectos
         </motion.a>
         <motion.a
           onClick={() => handleSmoothScroll("contact")}

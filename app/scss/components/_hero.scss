@@ -54,6 +54,10 @@
     padding: 1.5%;
     border-color: $details-color;
     font-size: medium;
+    @include movile {
+      width: 50%;
+      margin: 2%;
+    }
   }
 
   @include movile{
@@ -64,9 +68,9 @@
 .hero_image {
   width: 380px;
   height: 380px;
-  @include movile {
-    width: 280px;
-    height: 280px;
+  @include movile {    
+    width: 130px;
+    height: 130px;
   }
 }
 
