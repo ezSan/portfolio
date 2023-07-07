@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../scss/globals.module.scss";
-import { GitHub } from "iconoir-react";
+import { GitHub, GithubCircle, Rocket } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,6 +13,7 @@ const {
   description,
   buttons,
   button,
+  outlinedButton,
 } = styles;
 
 export default function ProjectCard(props) {
@@ -20,6 +21,7 @@ export default function ProjectCard(props) {
 
   return (
     <div className={projectCard}>
+      <h2 className={title}>{props.nombre}</h2>
       <Image
         src={props.image}
         alt={props.nombre}
@@ -27,10 +29,13 @@ export default function ProjectCard(props) {
         width={150}
         height={150}
       />
-      <h2 className={title}>{props.nombre}</h2>
       <div className={technologies}>
         {tecn.map((tecno, index) =>
-          tecno.map((p) => <p key={tecno} className={span}>{p}</p>)
+          tecno.map((p) => (
+            <p key={tecno} className={span}>
+              {p}
+            </p>
+          ))
         )}
       </div>
       <p className={description}>{props.desc}</p>
@@ -38,21 +43,21 @@ export default function ProjectCard(props) {
         {props.github && (
           <a
             href={props.github}
-            className={button}
+            className={outlinedButton}
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            Código <GithubCircle />
           </a>
         )}
         {props.deploy && (
           <a
             href={props.deploy}
-            className={button}
+            className={outlinedButton}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Deploy
+            Sitio <Rocket />
           </a>
         )}
       </div>
