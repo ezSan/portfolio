@@ -11,6 +11,10 @@
   top: 0;
   background-color: $color-header;
   align-items: center;
+  @include movile {
+    justify-content: space-around;
+
+  }
 }
 
 .styledNavBar {
