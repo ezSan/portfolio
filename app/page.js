@@ -8,6 +8,7 @@ import styles from "./scss/globals.module.scss";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
+
 import About from "./components/about/About";
 
 /* const {appStyled} = styles */
