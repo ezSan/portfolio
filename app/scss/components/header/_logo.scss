@@ -15,6 +15,7 @@
   /* Efecto de resaltado */
   background: linear-gradient(to right, $details-color, $color-bg); /* Ajusta el fondo a un tono más claro */
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @include movile {
