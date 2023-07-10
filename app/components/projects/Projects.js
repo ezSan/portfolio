@@ -31,7 +31,7 @@ export default function Projects() {
     <section className={projects} id="projects">
       <h3 className={title}>PROYECTOS</h3>
       <div className={styledProjectsContainer}>
-        {arrPro.map((py) => {
+        {arrPro.map((py, index) => {
           return (
             <div key={index}>
               <AnimatePresence>
