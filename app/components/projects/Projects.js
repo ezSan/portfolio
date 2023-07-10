@@ -33,7 +33,7 @@ export default function Projects() {
       <div className={styledProjectsContainer}>
         {arrPro.map((py) => {
           return (
-            <div>
+            <div key={index}>
               <AnimatePresence>
                 <motion.div
                   ref={ref}
@@ -42,7 +42,7 @@ export default function Projects() {
                   variants={cardVariants}
                 >
                   <ProjectCard
-                    key={py.nombre}
+                    
                     image={py.image}
                     nombre={py.nombre}
                     desc={py.desc}
