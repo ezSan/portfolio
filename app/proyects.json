@@ -9,6 +9,14 @@
       "deploy": "https://gifosbyezsan.netlify.app/"
     },
     {
+      "nombre": "Inclusive",
+      "image": "/projects/inclusive.png",
+      "desc": "Aplicación web y movile, para que usuarios con discapacidades motrices puedan encontrar lugares donde se cumplen normas de accesibilidad",
+      "tecnologias": ["ReactJs", "NextJs", "Sass", "React Hooks Form"],
+      "deploy": "https://fork-g3.vercel.app/landing",
+      "github": "https://github.com/ezSan/inclusive"
+    },
+    {
       "nombre": "Data Warehouse",
       "image": "/projects/dataWarehouse.png",
       "desc": "Data Warehouse completo para acceder, visualizar, modificar y analizar información de clientes para tomar decisiones efectivas.",
@@ -20,7 +28,14 @@
       "nombre": "Match & Cook",
       "image": "/projects/match.png",
       "desc": "Descubre recetas, de la misma manera que un match en tu app de citas preferidas, para la izquierda las rechazadas y haciala derecha las matcheadas!",
-      "tecnologias": ["ReactJs", "Redux", "Formik", "Boostrap", "Axios", "React Router"],
+      "tecnologias": [
+        "ReactJs",
+        "Redux",
+        "Formik",
+        "Boostrap",
+        "Axios",
+        "React Router"
+      ],
       "github": "https://github.com/ezSan/Match-Cook",
       "deploy": "https://matchandcook.netlify.app"
     },
@@ -28,22 +43,14 @@
       "nombre": "Markdown Previewer",
       "image": "/projects/Markdown.png",
       "desc": "Con ésta aplicación podrás escribir y formatear tu texto en Markdown de manera sencilla y ver los resultados de inmediato. Puedes escribir tu código en Javascript y resaltarlo para diferenciarlo.  ",
-      "tecnologias": ["HTML", "CSS", "ReactJs"],      
+      "tecnologias": ["HTML", "CSS", "ReactJs"],
       "deploy": "https://codepen.io/ezsan/pen/abajOwK"
-    },
-    {
-      "nombre": "Inclusive",
-      "image": "/projects/inclusive.png",
-      "desc": "Aplicación web y movile, para que usuarios con discapacidades motrices puedan encontrar lugares donde se cumplen normas de accesibilidad",
-      "tecnologias": ["ReactJs", "NextJs", "Sass","React Hooks Form"],      
-      "deploy": "https://fork-g3.vercel.app/landing",
-      "github": "https://github.com/ezSan/inclusive"
     },
     {
       "nombre": "Walk & Care",
       "image": "/projects/walk.png",
       "desc": "Aplicación web y movile, para que usuarios con discapacidades motrices puedan encontrar lugares donde se cumplen normas de accesibilidad",
-      "tecnologias": ["ReactJs", "NextJs"],      
+      "tecnologias": ["ReactJs", "NextJs"],
       "deploy": "https://walk-care.vercel.app/",
       "github": "https://github.com/ezSan/Walk-Care"
     },
@@ -51,12 +58,8 @@
       "nombre": "Random Quote Machine",
       "image": "/projects/RQuoteMachine.png",
       "desc": "Un widget de frases inspiradoras de grandes pensadores, con colores aleatorios. Ideal para motivarse de cara a un nuevo proyecto",
-      "tecnologias": ["Javascript","HTML5", "CSS",  "API"],      
+      "tecnologias": ["Javascript", "HTML5", "CSS", "API"],
       "deploy": "https://codepen.io/ezsan/pen/qBojPZO"
-      
     }
   ]
 }
-
-
-
