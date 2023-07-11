@@ -7,6 +7,18 @@ import Astronaut from "../../../public/astronaut.png";
 const { heroStyled, heroTitle, hero_content, hero_text, hero_image } = styles;
 
 export default function Hero() {
+  const smoothScrollAnimation = {
+    duration: 0.8, // Duración de la animación en segundos
+    ease: [0.43, 0.13, 0.23, 0.96], // Curva de aceleración personalizada
+  };
+
+  const handleSmoothScroll = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <div className={heroStyled} id="hero">
       <div className={hero_content}>
@@ -16,7 +28,13 @@ export default function Hero() {
           <h2 className={heroTitle}>Full Stack Developer</h2>
           <p>Transformando ideas en realidades digitales.</p>
 
-          <button>CONOCÉ MAS</button>
+          <motion.a
+            onClick={() => handleSmoothScroll("about")}
+            whileTap={{ scale: 0.9 }}
+            transition={smoothScrollAnimation}
+          >
+            <button>CONOCÉ MAS</button>
+          </motion.a>
         </div>
 
         <div>
