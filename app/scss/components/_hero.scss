@@ -54,10 +54,18 @@
     padding: 1.5%;
     border-color: $details-color;
     font-size: medium;
+    cursor: pointer;
     @include movile {
       width: 50%;
       margin: 2%;
     }
+
+   &:hover{
+    background-color: $details-color;
+    color:$color-bg;
+    font-weight: 500;
+    border-color: $color-bg 2px solid;
+   }
   }
 
   @include movile{
