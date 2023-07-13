@@ -41,28 +41,6 @@
   flex-direction: column;
 }
 
-.channels {
-  margin-top: 2%;
-  width: 90%;
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  @include movile {
-    margin-left: 5%;
-    margin-bottom: 2%;
-    display: flex;
-    justify-content: center;
-  }
- 
-}
-
-.iconContact {
-  padding: 2%;
-  color: #ffffff;
-  cursor: pointer;
-}
-
 .contactForm {
   text-align: center;
   width: 60%;
@@ -92,7 +70,7 @@
 }
 
 .contactPar {
-  width: 90%;
+  width: 50%;
   margin-left: 5%;
   font-size: large;
   text-align: center;

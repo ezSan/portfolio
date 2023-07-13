@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkedIn, Mail, GitHub } from "iconoir-react";
+
 import styles from "../../scss/globals.module.scss";
 
 const {
@@ -24,21 +24,7 @@ export default function Contact() {
           <p className={contactPar}>
             ¡Gracias por visitar por mi página! Si estás buscando un desarrollador Full Stack , ¡estoy acá para ayudarte! Dejame
             tus datos y motivo, ¡y juntos vamos a hacer grandes proyectos!
-          </p>
-          <div className={channels}>
-            <LinkedIn
-              width={150}
-              className={iconContact}
-              onClick={() =>
-                window.open("https://www.linkedin.com/in/ezsan/", "_blank")
-              }
-            />
-            <GitHub
-              width={150}
-              className={iconContact}
-              onClick={() => window.open("https://github.com/ezSan", "_blank")}
-            />
-          </div>
+          </p>          
         </div>
 
         <form className={contactForm}>
