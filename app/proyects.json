@@ -49,7 +49,7 @@
     {
       "nombre": "Walk & Care",
       "image": "/projects/walk.png",
-      "desc": "Aplicación web y movile, para que usuarios con discapacidades motrices puedan encontrar lugares donde se cumplen normas de accesibilidad",
+      "desc": "Aplicación web y movile, para que puedas encontrar algún paseador para tu mascota",
       "tecnologias": ["ReactJs", "NextJs"],
       "deploy": "https://walk-care.vercel.app/",
       "github": "https://github.com/ezSan/Walk-Care"

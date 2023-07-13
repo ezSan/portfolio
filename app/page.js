@@ -15,7 +15,7 @@ import About from "./components/about/About";
 
 export default function Home() {
   return (
-    <div id='__next'>
+    <div>
       <Header />
       <Hero />
       <About/>
