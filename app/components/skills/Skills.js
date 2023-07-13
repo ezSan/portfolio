@@ -74,15 +74,7 @@ const icons = [
   {
     name: "Git",
     src: require("../../../public/icons/desarrolloIcons/git.svg"),
-  },
-  {
-    name: "Slack",
-    src: require("../../../public/icons/desarrolloIcons/slack.png"),
-  },
-  {
-    name: "Agile",
-    src: require("../../../public/icons/desarrolloIcons/agile.png"),
-  },
+  }
 ];
 
 export default function Skills() {
