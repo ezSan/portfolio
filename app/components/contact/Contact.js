@@ -20,6 +20,7 @@ export default function Contact() {
       
       <h3>CONTACTO</h3>
       <div className={contactContainer}>
+      
         <div className={principalContact}>
           <p className={contactPar}>
             ¡Gracias por visitar por mi página! Si estás buscando un desarrollador Full Stack , ¡estoy acá para ayudarte! Dejame
