@@ -4,12 +4,13 @@ import styles from "../../scss/globals.module.scss";
 
 const {
   styledSection,
+  contactTitle,
   channels,
   contactContainer,
   principalContact,
   contactForm,
   contactPar,
-  contactTitle,
+ 
   iconContact,
   submitButton,
 } = styles;
@@ -17,16 +18,18 @@ const {
 export default function Contact() {
   return (
     <div id="contact" className={styledSection}>
-      
-      <h3>CONTACTO</h3>
-      <div className={contactContainer}>
-      
+      <div className={contactContainer}>        
+
         <div className={principalContact}>
+        <h4 className={contactTitle}>CONTACTO</h4>
           <p className={contactPar}>
-            ¡Gracias por visitar por mi página! Si estás buscando un desarrollador Full Stack , ¡estoy acá para ayudarte! Dejame
-            tus datos y motivo, ¡y juntos vamos a hacer grandes proyectos!
-          </p>          
+            ¡Gracias por visitar por mi página! Si estás buscando un
+            desarrollador, ¡estoy acá para ayudarte! Dejame tus
+            datos y motivo, ¡y juntos vamos a hacer grandes proyectos!
+          </p>
         </div>
+
+       
 
         <form className={contactForm}>
           <input type="text" placeholder=" Nombre" />
