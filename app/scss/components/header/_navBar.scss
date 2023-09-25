@@ -63,13 +63,6 @@
   }
 }
 
-
-.listItemsOpen{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
 .menuIcon {
   display: none;
   @include movile {
@@ -101,9 +94,3 @@
   display: none;
 }
 
-.listMovile {
-  flex-direction: column;
-  align-items: space-around;
-  justify-content: space-around;
-  width: 100%;
-}
