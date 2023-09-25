@@ -1,4 +1,6 @@
 import nodemailer from "nodemailer";
+import fs from "fs";
+import path from "path"; // Importa el módulo 'path' de Node.js
 
 // Configura el transporte de correo
 const transporter = nodemailer.createTransport({
@@ -22,6 +24,15 @@ export default async function handler(req, res) {
     try {
       const { fullName, email, mensaje } = req.body;
 
+      // Construye la ruta absoluta al archivo de plantilla
+      const emailTemplatePath = path.resolve("./app/emailTemplates/autoreply.html");
+
+      // Imprime la ruta del archivo de plantilla en la consola
+      console.log("Ruta del archivo de plantilla:", emailTemplatePath);
+
+      // Lee el contenido del archivo de plantilla
+      const emailTemplate = fs.readFileSync(emailTemplatePath, "utf8");
+
       const mailOptions = {
         from: "ezequiel.sanchez.7391@gmail.com",
         to: "ezsandev@gmail.com",
@@ -39,28 +50,18 @@ export default async function handler(req, res) {
       };
 
       // enviar el mail a mi casilla
-
       await transporter.sendMail(mailOptions);
+      console.log("Correo enviado a tu casilla con éxito");
 
       // Respuesta automática al cliente
-
       const autoReplyMailOptions = {
         from: "ezsan.mailing@gmail.com",
         to: email, // Usar la dirección de correo del cliente
         subject: "Gracias por tu mensaje",
-        html: `
-                <html>
-                  <body>
-                    <h1 style="color: #0048ea;">¡Gracias por ponerte en contacto!</h1>
-                    <p>Hemos recibido tu mensaje y te responderemos lo antes posible.</p>
-                    <p>Este es un mensaje automático para confirmar que hemos recibido tu consulta.</p>
-                  </body>
-                </html>
-              `,
+        html: emailTemplate,
       };
 
-      // devolver un mail confirmando recepción al cliente 
-
+      // devolver un mail confirmando recepción al cliente
       await autoReplyTransporter.sendMail(autoReplyMailOptions);
 
       return res.status(200).json({ message: "Mensaje enviado con éxito" });

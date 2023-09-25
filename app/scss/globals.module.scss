@@ -23,10 +23,18 @@
   h3{
     color:$color-text
   }
-
-
-
-
- 
   
 }
+
+
+.emailTemplate{
+  background-color: $color-bg;
+  color:$color-text;
+  li{
+    list-style: none;
+  }
+  a{
+    color: $details-color;
+  }
+}
+
