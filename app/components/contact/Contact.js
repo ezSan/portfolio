@@ -44,14 +44,14 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        alert("Mensaje enviado con éxito");
+        console.log("Mensaje enviado con éxito");
         resetForm();
       } else {
-        alert("Error al enviar el mensaje");
+        console.log("Error al enviar el mensaje");
       }
     } catch (error) {
       console.error(error);
-      alert("Error interno del servidor");
+      console.log("Error interno del servidor");
     }
   };
 

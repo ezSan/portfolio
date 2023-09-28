@@ -1,6 +1,13 @@
 {
   "proyects": [
     {
+      "nombre": "Linea Blanca S.R.L",
+      "image": "/projects/lineaBlanca.png",
+      "desc": "Actualización de web institucional, movile y desktop, con sliders, videos, contacto, mapas, descarga de archivos, links a redes sociales. Respetando el diseño previsto, solo desarrollo y mantenimiento",
+      "tecnologias": ["NextJs", "Express", "Nodemailer", "Formik", "Yup", "Sass"],      
+      "deploy": "http://lineablancasrl.com.ar/"
+    },
+    {
       "nombre": "Gifos",
       "image": "/projects/gifos.png",
       "desc": "Aplicación interactiva, responsive, con modo nocturno,  para compartir, guardar, descargar y crear tus propios Gif. Utilizando la API de Giphy y herramientas nativas del ordenador. ",
