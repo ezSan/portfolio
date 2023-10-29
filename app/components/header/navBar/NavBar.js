@@ -29,7 +29,7 @@ export default function NavBar(props) {
           whileTap={{ scale: 0.9 }}
           transition={smoothScrollAnimation}
         >
-          Sobre mi
+          SOBRE MI
         </motion.a>
         <motion.a
           onClick={() => handleSmoothScroll("tech")}
@@ -37,7 +37,7 @@ export default function NavBar(props) {
           whileTap={{ scale: 0.9 }}
           transition={smoothScrollAnimation}
         >
-          Tecnologías
+          TECNOLOGÍAS
         </motion.a>
         <motion.a
           onClick={() => handleSmoothScroll("projects")}
@@ -45,7 +45,7 @@ export default function NavBar(props) {
           whileTap={{ scale: 0.9 }}
           transition={smoothScrollAnimation}
         >
-          Proyectos
+          PROYECTOS
         </motion.a>
         <motion.a
           onClick={() => handleSmoothScroll("contact")}
@@ -53,7 +53,7 @@ export default function NavBar(props) {
           whileTap={{ scale: 0.9 }}
           transition={smoothScrollAnimation}
         >
-          Contacto
+          CONTACTO
         </motion.a>
       </ul>
     </nav>
