@@ -3,14 +3,14 @@
     {
       "nombre": "Linea Blanca S.R.L",
       "image": "/projects/lineaBlanca.png",
-      "desc": "Actualización de web institucional, movile y desktop, con sliders, videos, contacto, mapas, descarga de archivos, links a redes sociales. Respetando el diseño previsto, solo desarrollo y mantenimiento",
+      "desc": "Actualización de web institucional, responsive y posicionamiento SEO.",
       "tecnologias": ["NextJs", "Express", "Nodemailer", "Formik", "Yup", "Sass"],      
       "deploy": "http://lineablancasrl.com.ar/"
     },
     {
       "nombre": "Delilah Restó",
-      "image": "/projects/gifos.png",
-      "desc": "Aplicación de gestion de un delivery, creación de usuarios, administradores, alta, baja y gestión de estados de pedido, autenticación, base de datos y seguridad. ",
+      "image": "/projects/delilah.png",
+      "desc": "Ecomerce con creación de usuario, administrador, alta, baja y estado de pedidos, seguridad, bases de datos y documentación.",
       "tecnologias": ["Javascript", "NodeJS", "Express", "SQL", "YWT" ],
       "github": "https://github.com/ezSan/delilahResto_back"      
     },
