@@ -8,6 +8,13 @@
       "deploy": "http://lineablancasrl.com.ar/"
     },
     {
+      "nombre": "Delilah Restó",
+      "image": "/projects/gifos.png",
+      "desc": "Aplicación de gestion de un delivery, creación de usuarios, administradores, alta, baja y gestión de estados de pedido, autenticación, base de datos y seguridad. ",
+      "tecnologias": ["Javascript", "NodeJS", "Express", "SQL", "YWT" ],
+      "github": "https://github.com/ezSan/delilahResto_back"      
+    },
+    {
       "nombre": "Gifos",
       "image": "/projects/gifos.png",
       "desc": "Aplicación interactiva, responsive, con modo nocturno,  para compartir, guardar, descargar y crear tus propios Gif. Utilizando la API de Giphy y herramientas nativas del ordenador. ",
