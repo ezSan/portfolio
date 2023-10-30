@@ -31,6 +31,14 @@
       "github": "https://github.com/ezSan/inclusive"
     },
     {
+      "nombre": "Pale blue dot",
+      "image": "/projects/landing.png",
+      "desc": "Landing page de un podcast channel, movile y desktop. Con reproducción directa desde el sitio en Spotify.  ",
+      "tecnologias": ["Html", "Css", "Sass"],
+      "deploy": "https://ezsan.github.io/podcastChannel/",
+      "github": "https://github.com/ezSan/podcastChannel"
+    },
+    {
       "nombre": "Data Warehouse",
       "image": "/projects/dataWarehouse.png",
       "desc": "Data Warehouse completo para acceder, visualizar, modificar y analizar información de clientes para tomar decisiones efectivas.",
