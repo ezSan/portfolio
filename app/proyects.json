@@ -68,15 +68,7 @@
       "tecnologias": ["HTML", "CSS", "ReactJs"],
       "deploy": "https://codepen.io/ezsan/pen/abajOwK"
     },
-    {
-      "nombre": "Walk & Care",
-      "image": "/projects/walk.png",
-      "desc": "Aplicación web y movile, para que puedas encontrar algún paseador para tu mascota",
-      "tecnologias": ["ReactJs", "NextJs"],
-      "deploy": "https://walk-care.vercel.app/",
-      "github": "https://github.com/ezSan/Walk-Care"
-    },
-    {
+     {
       "nombre": "Random Quote Machine",
       "image": "/projects/RQuoteMachine.png",
       "desc": "Un widget de frases inspiradoras de grandes pensadores, con colores aleatorios. Ideal para motivarse de cara a un nuevo proyecto",
