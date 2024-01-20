@@ -8,8 +8,8 @@ const { heroStyled, heroTitle, hero_content, hero_text, hero_image } = styles;
 
 export default function Hero() {
   const smoothScrollAnimation = {
-    duration: 0.8, // Duración de la animación en segundos
-    ease: [0.43, 0.13, 0.23, 0.96], // Curva de aceleración personalizada
+    duration: 0.8, 
+    ease: [0.43, 0.13, 0.23, 0.96],
   };
 
   const handleSmoothScroll = (sectionId) => {
@@ -64,16 +64,3 @@ export default function Hero() {
   );
 }
 
-{
-  /*       <p className={heroDescription}>
-        Desde muy jóven, he sido un apasionado de la tecnología. Pasaba horas
-        explorando la web, fascinado por el mundo de posibilidades que ofrecía.
-        Después de un largo y dedicado proceso de formación, ahora puedo decir
-        que tengo las herramientas necesarias para convertir mi pasión en
-        realidad y compartirla con los demás. <br></br> Además de la tecnología,
-        también me interesan la música, el deporte y la naturaleza. Son
-        fuentes de inspiración y equilibrio en mi vida. <br></br>En esta página,
-        encontrarás mis trabajos más recientes. Te invito a explorarlos y
-        descubrir las soluciones que ofrezco como desarrollador full stack.
-      </p> */
-}

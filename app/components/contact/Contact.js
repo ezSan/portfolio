@@ -12,6 +12,7 @@ const {
   principalContact,
   contactForm,
   contactPar,
+  additionalButton,
 
   iconContact,
   submitButton,
@@ -55,6 +56,17 @@ export default function Contact() {
     }
   };
 
+
+  const handleDownloadCV = () => {
+    // Puedes crear una función para descargar el archivo
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/cv/fullstack.pdf";
+    downloadLink.download = "fullstack_cv.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <div id="contact" className={styledSection}>
       <div className={contactContainer}>
@@ -65,6 +77,7 @@ export default function Contact() {
             ¡estoy aquí para ayudarte! Deja tus datos y motivo, ¡y juntos vamos
             a hacer grandes proyectos!
           </p>
+          <button className={submitButton} onClick={handleDownloadCV}>Descargar CV</button>
         </div>
         <Formik
           initialValues={initialValues}

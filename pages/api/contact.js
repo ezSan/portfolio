@@ -4,18 +4,18 @@ import path from "path"; // Importa el módulo 'path' de Node.js
 
 // Configura el transporte de correo
 const transporter = nodemailer.createTransport({
-  service: "Gmail", // Cambia esto según tu proveedor de correo electrónico
+  service: "Gmail", 
   auth: {
-    user: "ezsan.mailing@gmail.com", // Cambia esto a tu dirección de correo
-    pass: "lkcd pdnn muhp gnek", // Cambia esto a tu contraseña
+    user: "ezsan.mailing@gmail.com", 
+    pass: "lkcd pdnn muhp gnek", 
   },
 });
 
 const autoReplyTransporter = nodemailer.createTransport({
-  service: "Gmail", // Cambia esto según tu proveedor de correo electrónico
+  service: "Gmail",
   auth: {
-    user: "ezsan.mailing@gmail.com", // Cambia esto a tu dirección de correo
-    pass: "lkcd pdnn muhp gnek", // Cambia esto a tu contraseña
+    user: "ezsan.mailing@gmail.com", 
+    pass: "lkcd pdnn muhp gnek", 
   },
 });
 
