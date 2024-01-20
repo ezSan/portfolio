@@ -60,6 +60,20 @@
       ],
       "github": "https://github.com/ezSan/Match-Cook",
       "deploy": "https://matchandcook.netlify.app"
+    },
+    {
+      "nombre": "Markdown Previewer",
+      "image": "/projects/Markdown.png",
+      "desc": "Con ésta aplicación podrás escribir y formatear tu texto en Markdown de manera sencilla y ver los resultados de inmediato. Puedes escribir tu código en Javascript y resaltarlo para diferenciarlo.  ",
+      "tecnologias": ["HTML", "CSS", "ReactJs"],
+      "deploy": "https://codepen.io/ezsan/pen/abajOwK"
+    },
+     {
+      "nombre": "Random Quote Machine",
+      "image": "/projects/RQuoteMachine.png",
+      "desc": "Un widget de frases inspiradoras de grandes pensadores, con colores aleatorios. Ideal para motivarse de cara a un nuevo proyecto",
+      "tecnologias": ["Javascript", "HTML5", "CSS", "API"],
+      "deploy": "https://codepen.io/ezsan/pen/qBojPZO"
     }
   ]
 }
