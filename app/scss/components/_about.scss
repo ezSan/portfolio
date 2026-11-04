@@ -1,51 +1,138 @@
-@use "../utils/colors" as *;
-@use "../utils/mixins" as *;
 
-.about {
-  width: 60%;
-  margin: 2% 20% 2% 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@use "../utils/barrelUtils.scss" as *;
 
-  h3 {
-    text-align: center;
-    font-size: xx-large;
-    margin-bottom: 1%;
-  }
-  p {
-    font-size: x-large;
-    width: 60%;
-    height: max-content;
-  }
-
-  @include movile {
-    width: 90%;
-    margin: 10% 2% 2% 5%;
-  }
+.aboutSection {
+  width: 100%;
+  padding: 115px 0;
+  background-color: $color-bg;
+  color: $color-text;
+  scroll-margin-top: 85px;
 }
 
-.aboutCtn {
-  display: flex;
-  justify-content: space-evenly;
+.aboutContainer {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 90px;
   align-items: center;
-  @include movile {
-    width: 100%;
-    margin: 2% 5% 2% 5%;
+}
 
-    p {
-      font-size: medium;
-      width: 100%;
+.aboutIntro {
+  .aboutLabel {
+    color: $details-color;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: clamp(38px, 5vw, 55px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin: 25px 0;
+
+    strong {
+      color: $details-color;
+    }
+  }
+
+  p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 15px 22px;
+    background: $details-color;
+    color: $color-bg;
+    border: 1px solid $details-color;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 }
 
-.aboutImg {
-  width: 300px;
-  height: 300px;
-  @include movile {
-    width: 130px;
-    height: 130px;
+.aboutBenefits {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.benefitCard {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  padding: 27px 24px;
+  background: #111;
+  border: 1px solid #292929;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: $details-color;
+  }
+
+  > span {
+    color: $details-color;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 3px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 0 0 10px;
+  }
+
+  p {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutContainer {
+    gap: 40px;
+  }
+}
+
+@include movile {
+  .aboutSection {
+    padding: 75px 0;
+  }
+
+  .aboutContainer {
+    width: calc(100% - 40px);
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .aboutIntro {
+    h2 {
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .aboutBenefits {
+    gap: 14px;
+  }
+
+  .benefitCard {
+    padding: 23px 18px;
+    gap: 16px;
   }
 }
