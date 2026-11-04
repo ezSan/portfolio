@@ -1,9 +1,6 @@
 @use "./utils/barrelUtils.scss" as *;
 @use "./components/barrelComponents.scss" as *;
 
-
-
-
 .appStyled {
   background-color: $color-bg;
   font-family: $font-montserrat;
@@ -11,30 +8,38 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 0;
-  color:$color-text;
-  
+  color: $color-text;
+
   a {
     text-decoration: none;
-    color:white;
+    color: white;
     font-weight: 500;
     font-size: larger;
   }
 
-  h3{
-    color:$color-text
+  h3 {
+    color: $color-text;
   }
-  
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section[id] {
+    scroll-margin-top: 90px;
+  }
 }
 
-
-.emailTemplate{
+.emailTemplate {
   background-color: $color-bg;
-  color:$color-text;
-  li{
+  color: $color-text;
+  li {
     list-style: none;
   }
-  a{
+  a {
     color: $details-color;
   }
 }
+
+
 

@@ -1,40 +1,123 @@
+
 @use "../utils/colors" as *;
 @use "../utils/mixins" as *;
 
-
-.footerStyled{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 24px 6px 6px 6px;
-
-    p{
-        margin: 0;
-    }
+.footerStyled {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 80px;
+  padding: 45px 6% 20px;
+  background: #080b10;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  overflow: hidden;
 }
 
-.channels {
-    margin-top: 2%;
-    width: 90%;
-    
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    @include movile {
-      margin-top: 3%;
-      margin-left: 5%;
-      margin-bottom: 2%;
-      display: flex;
-      justify-content: center;
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 35px;
+}
+
+.brand {
+  .brandName {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+
+    span {
+      color: #00bfff;
     }
-   
   }
 
-  .iconContact {
-    padding: 2%;
-    color: #ffffff;
-    cursor: pointer;
-    width: min-content;
+  p {
+    margin: 7px 0 0;
+    color: #9299a5;
+    font-size: 13px;
   }
+}
+
+.footerNav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  a {
+    color: #aeb5c0;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #00bfff;
+    }
+  }
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #aeb5c0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #00bfff;
+      border-color: #00bfff;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  p {
+    margin: 0;
+    color: #747d89;
+    font-size: 12px;
+  }
+}
+
+@include movile {
+  .footerStyled {
+    margin-top: 55px;
+    padding: 35px 6% 20px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .footerNav {
+    gap: 18px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,166 @@
+
+@use "../utils/barrelUtils.scss" as *;
+
+.servicesSection {
+  width: 100%;
+  padding: 110px 0;
+  background-color: $color-bg;
+  color: $color-text;
+  scroll-margin-top: 85px;
+}
+
+.servicesContainer {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.servicesHeading {
+  max-width: 700px;
+  margin-bottom: 55px;
+
+  > span {
+    color: $details-color;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.15;
+    margin: 22px 0;
+    letter-spacing: -1.5px;
+
+    strong {
+      color: $details-color;
+    }
+  }
+
+  p {
+    max-width: 570px;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 26px;
+  min-height: 390px;
+  background: #101010;
+  border: 1px solid #292929;
+  transition: border-color 0.3s ease,
+              transform 0.3s ease;
+
+  &:hover {
+    border-color: $details-color;
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    font-size: 23px;
+    margin: 35px 0 12px;
+  }
+
+  > p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 95px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 25px;
+
+    li {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 13px;
+      color: #bbb;
+      font-size: 13px;
+
+      span {
+        color: $details-color;
+      }
+    }
+  }
+
+  button {
+    margin-top: auto;
+    padding: 14px 0;
+    background: transparent;
+    border: none;
+    border-top: 1px solid #303030;
+    color: $details-color;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+}
+
+.serviceNumber {
+  color: $details-color;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include movile {
+  .servicesSection {
+    padding: 75px 0;
+  }
+
+  .servicesContainer {
+    width: calc(100% - 40px);
+  }
+
+  .servicesHeading {
+    margin-bottom: 35px;
+
+    h2 {
+      font-size: 37px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .serviceCard {
+    min-height: auto;
+    padding: 27px 22px;
+
+    h3 {
+      margin-top: 25px;
+    }
+
+    > p {
+      min-height: auto;
+    }
+  }
+}

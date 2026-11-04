@@ -1,77 +1,111 @@
+
 @use "../../utils/barrelUtils.scss" as *;
 
 .styledHeader {
   display: flex;
-  justify-content:flex-start;
-  gap:20%;
-  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
-  margin: 0% 1% 1% 0%;
+  min-height: 72px;
+  box-sizing: border-box;
+  padding: 12px 4%;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
+  left: 0;
   background-color: $color-header;
   align-items: center;
-  @include movile {
-    justify-content: space-around;
 
+  @media screen and (max-width: 1050px) {
+    min-height: 64px;
+    padding: 10px 5%;
   }
 }
 
 .styledNavBar {
-  width: 60%;
-  margin: 0 5% 0 5%;
-  @include movile{
+  width: auto;
+
+  @media screen and (max-width: 1050px) {
     display: none;
   }
 }
 
-.navBarOpen{
+.navBarOpen {
   display: none;
-  @include movile {
-    width: 100%;
+
+  @media screen and (max-width: 1050px) {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 50vh;
-    
-    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $color-header;
+    padding: 20px 0 30px;
+    box-sizing: border-box;
   }
 }
 
-
 .listItems {
   display: flex;
-  justify-content:space-evenly;
   align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
   list-style: none;
   padding: 0;
-  margin-left: 0;
-  
-  cursor:pointer;  
-
-  @include movile {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 6.25vh;
-    padding:1%
-  }
+  margin: 0;
 
   li {
-    text-decoration: none;
+    list-style: none;
+  }
+
+  @media screen and (max-width: 1050px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+.navLink {
+  color: $color-text;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $details-color;
+  }
+}
+
+.navCta {
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: $details-color;
+  color: $color-bg;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 1050px) {
+    margin-top: 5px;
   }
 }
 
 .menuIcon {
   display: none;
-  @include movile {
+
+  @media screen and (max-width: 1050px) {
     display: inline;
     padding: 2%;
-    color: white;    
+    color: white;
     transform: scale(1.5);
-    margin-right: 6px;    
-   
+    margin-right: 6px;
   }
 }
 
@@ -80,7 +114,7 @@
 }
 
 .cancelIconVisible {
-  @include movile {
+  @media screen and (max-width: 1050px) {
     display: inline;
     padding: 3%;
     color: white;
@@ -92,4 +126,3 @@
 .cancelIcon {
   display: none;
 }
-
