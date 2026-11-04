@@ -2,6 +2,9 @@
   "name": "ezsandev",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+  "node": "24.x"
+},
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -25,4 +28,5 @@
     "sass": "^1.62.1",
     "yup": "^1.2.0"
   }
+  
 }
